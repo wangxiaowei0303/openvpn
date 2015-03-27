@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="openvpn-study" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/openvpn-study" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/openvpn-study" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-DUSE_CRYPTO" />
+			<Add option="-DENABLE_CLIENT_SERVER" />
+			<Add option="-DUSE_LOAD_LIBRARY" />
+			<Add option="-DHAVE_GETSOCKNAME=1" />
+			<Add option="-DHAVE_OPENSSL_ENGINE_H=1" />
+			<Add option="-DHAVE_ENGINE_LOAD_BUILTIN_ENGINES=1" />
+			<Add option="-DHAVE_TIME=1" />
+			<Add option="-DHAVE_UNISTD_H=1" />
+			<Add option="-DHAVE_VSNPRINTF=1" />
+			<Add option="-DHAVE_GETPASS=1" />
+			<Add option="-DHAVE_ACCEPT=1" />
+			<Add option="-DHAVE_ARPA_INET_H=1" />
+			<Add option="-DHAVE_BIND=1" />
+			<Add option="-DHAVE_CHDIR=1" />
+			<Add option="-DHAVE_CHROOT=1" />
+			<Add option="-DHAVE_CHSIZE=1" />
+			<Add option="-DHAVE_CMSGHDR=1" />
+			<Add option="-DHAVE_CONNECT=1" />
+			<Add option="-DHAVE_CTIME=1" />
+			<Add option="-DHAVE_DAEMON=1" />
+			<Add option="-DHAVE_DUP=1" />
+			<Add option="-DHAVE_DUP2=1" />
+			<Add option="-DSTDC_HEADERS=1" />
+			<Add option="-DTIME_WITH_SYS_TIME=1" />
+			<Add option="-DUSE_CRYPTO=1" />
+			<Add option="-DUSE_LZO=1" />
+			<Add option="-DUSE_SSL=1" />
+			<Add option="-DUSE_PTHREAD=1" />
+			<Add option="-DCONFIGURE_PF" />
+			<Add option="-DCONFIG_FEATURE_IPROUTE" />
+			<Add option="-DENABLE_MULTIHOME" />
+			<Add option="-DENABLE_PASSWORD_SAVE" />
+		</Compiler>
+		<Unit filename="base64.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="base64.h" />
+		<Unit filename="basic.h" />
+		<Unit filename="buffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="buffer.h" />
+		<Unit filename="circ_list.h" />
+		<Unit filename="common.h" />
+		<Unit filename="config-win32.h" />
+		<Unit filename="crypto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="crypto.h" />
+		<Unit filename="cryptoapi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cryptoapi.h" />
+		<Unit filename="dhcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dhcp.h" />
+		<Unit filename="errlevel.h" />
+		<Unit filename="error.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="error.h" />
+		<Unit filename="event.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="event.h" />
+		<Unit filename="fdmisc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fdmisc.h" />
+		<Unit filename="forward-inline.h" />
+		<Unit filename="forward.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="forward.h" />
+		<Unit filename="fragment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fragment.h" />
+		<Unit filename="gremlin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gremlin.h" />
+		<Unit filename="helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="helper.h" />
+		<Unit filename="httpdigest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="httpdigest.h" />
+		<Unit filename="ieproxy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ieproxy.h" />
+		<Unit filename="init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="init.h" />
+		<Unit filename="integer.h" />
+		<Unit filename="interval.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="interval.h" />
+		<Unit filename="list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="list.h" />
+		<Unit filename="lladdr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lladdr.h" />
+		<Unit filename="lzo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lzo.h" />
+		<Unit filename="manage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="manage.h" />
+		<Unit filename="mbuf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mbuf.h" />
+		<Unit filename="memcmp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="memdbg.h" />
+		<Unit filename="misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="misc.h" />
+		<Unit filename="mroute.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mroute.h" />
+		<Unit filename="mss.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mss.h" />
+		<Unit filename="mtcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mtcp.h" />
+		<Unit filename="mtu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mtu.h" />
+		<Unit filename="mudp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mudp.h" />
+		<Unit filename="multi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="multi.h" />
+		<Unit filename="ntlm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ntlm.h" />
+		<Unit filename="occ-inline.h" />
+		<Unit filename="occ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="occ.h" />
+		<Unit filename="openvpn-plugin.h" />
+		<Unit filename="openvpn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="openvpn.h" />
+		<Unit filename="options.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="options.h" />
+		<Unit filename="otime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="otime.h" />
+		<Unit filename="packet_id.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="packet_id.h" />
+		<Unit filename="perf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="perf.h" />
+		<Unit filename="pf-inline.h" />
+		<Unit filename="pf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pf.h" />
+		<Unit filename="ping-inline.h" />
+		<Unit filename="ping.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ping.h" />
+		<Unit filename="pkcs11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pkcs11.h" />
+		<Unit filename="plugin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="plugin.h" />
+		<Unit filename="pool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pool.h" />
+		<Unit filename="proto.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="proto.h" />
+		<Unit filename="proxy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="proxy.h" />
+		<Unit filename="ps.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ps.h" />
+		<Unit filename="push.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="push.h" />
+		<Unit filename="pushlist.h" />
+		<Unit filename="reliable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="reliable.h" />
+		<Unit filename="route.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="route.h" />
+		<Unit filename="schedule.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="schedule.h" />
+		<Unit filename="session_id.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="session_id.h" />
+		<Unit filename="shaper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="shaper.h" />
+		<Unit filename="sig.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sig.h" />
+		<Unit filename="socket.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="socket.h" />
+		<Unit filename="socks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="socks.h" />
+		<Unit filename="ssl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl.h" />
+		<Unit filename="status.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="status.h" />
+		<Unit filename="syshead.h" />
+		<Unit filename="thread.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="thread.h" />
+		<Unit filename="tun.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tun.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

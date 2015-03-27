@@ -1,0 +1,20 @@
+# autoreconf -v -i 生成的文件
+Makefile.in
+aclocal.m4
+autom4te.cache/
+compile
+config.guess
+config.h.in
+config.sub
+configure
+depcomp
+images/Makefile.in
+install-sh
+install-win32/Makefile.in
+missing
+service-win32/Makefile.in    
+test-driver
+
+# codeblocks 生成的文件
+*.layout
+*.depend
