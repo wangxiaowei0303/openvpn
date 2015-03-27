@@ -52,6 +52,7 @@
 			<Add option="-DHAVE_DAEMON=1" />
 			<Add option="-DHAVE_DUP=1" />
 			<Add option="-DHAVE_DUP2=1" />
+			<Add option="-DHAVE_GETTIMEOFDAY=1" />
 			<Add option="-DSTDC_HEADERS=1" />
 			<Add option="-DTIME_WITH_SYS_TIME=1" />
 			<Add option="-DUSE_CRYPTO=1" />
@@ -62,6 +63,32 @@
 			<Add option="-DCONFIG_FEATURE_IPROUTE" />
 			<Add option="-DENABLE_MULTIHOME" />
 			<Add option="-DENABLE_PASSWORD_SAVE" />
+			<Add option="-DHAVE_ENGINE_REGISTER_ALL_COMPLETE=1" />
+			<Add option="-DHAVE_ENGINE_CLEANUP=1" />
+			<Add option="-DHAVE_CHSIZE=0" />
+			<Add option="-DHAVE_CPP_VARARG_MACRO_GCC=1" />
+			<Add option="-DHAVE_CTYPE_H=1" />
+			<Add option="-DHAVE_ERRNO_H=1" />
+			<Add option="-DHAVE_EVP_CIPHER_CTX_SET_KEY_LENGTH=1" />
+			<Add option="-DHAVE_FCNTL_H=1" />
+			<Add option="-DHAVE_GETSOCKOPT=1" />
+			<Add option="-DHAVE_INET_NTOA=1" />
+			<Add option="-DHAVE_MALLOC=1" />
+			<Add option="-DHAVE_MEMSET=1" />
+			<Add option="-DHAVE_SETSOCKOPT=1" />
+			<Add option="-DHAVE_SOCKET=1" />
+			<Add option="-DHAVE_STDARG_H=1" />
+			<Add option="-DHAVE_STDINT_H=1" />
+			<Add option="-DHAVE_STDIO_H=1" />
+			<Add option="-DHAVE_STDLIB_H=1" />
+			<Add option="-DHAVE_STRERROR=1" />
+			<Add option="-DHAVE_STRINGS_H=1" />
+			<Add option="-DHAVE_STRING_H=1" />
+			<Add option="-DHAVE_SYSTEM=1" />
+			<Add option="-DHAVE_SYS_FILE_H=1" />
+			<Add option="-DHAVE_SYS_STAT_H=1" />
+			<Add option="-DHAVE_SYS_TIME_H=1" />
+			<Add option="-DHAVE_SYS_TYPES_H=1" />
 		</Compiler>
 		<Unit filename="base64.c">
 			<Option compilerVar="CC" />
